@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>缩略图幻灯片</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="slider">
+		<div class="main" id="main-temp">
+			<!-- 幻灯片模板 -->
+			<div class="main-i" id="main-{{index}}">
+				<img src="img/{{index}}.jpg">
+				<div class="caption">
+					<h2>{{h2}}</h2>
+					<h3>{{h3}}</h3>
+				</div>
+			</div>
+		</div>
+		<div class="ctrl" id="ctrl-temp">
+			<!-- 缩略图模板 -->
+			<a href="javascript:switchSlides({{index}});" class="ctrl-i" id="ctrl-{{index}}">
+				<img src="img/{{index}}.jpg">
+		</div>
+	</div>
+	<script src="slides.js"></script>
+</body>
+</html>
